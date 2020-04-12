@@ -172,7 +172,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
         })
     },
     renderHotMovies: function (t, e) {
-        var n = '\n                {{#list}}\n                <li>\n                    <a href="/play/{{url}}"><img src="/www/uploads/movie/{{id}}.jpg" realImg="" alt=""></a>\n                    <p>{{title}}</p>\n                    <span>{{info}}</span>\n                </li>\n                {{/list}}',
+        var n = '\n                {{#list}}\n                <li>\n                    <a href="/play/{{url}}"><img src="{{logo}}" realImg="" alt=""></a>\n                    <p>{{title}}</p>\n                    <span>{{info}}</span>\n                </li>\n                {{/list}}',
         o = utils.renderHtml(n, t) + "",
         r = utils.renderHtml(n, e) + "";
         o = o.trim(),
@@ -215,7 +215,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
         }, 5e3)
     },
     renderMovies: function (t) {
-        var e = utils.renderHtml('{{#list}}\n                <li class="li1">\n                        <a href="/play/{{url}}" class="pos">\n                            <img src="/www/uploads/movie/{{id}}.jpg" realImg="" alt="">\n                            <em>{{info}}</em>\n                        </a>\n                        <p>{{title}}</p>\n                </li>\n                {{/list}}', t);
+        var e = utils.renderHtml('{{#list}}\n                <li class="li1">\n                        <a href="/play/{{url}}" class="pos">\n                            <img src="{{logo}}" realImg="" alt="">\n                            <em>{{info}}</em>\n                        </a>\n                        <p>{{title}}</p>\n                </li>\n                {{/list}}', t);
         document.getElementById("movie_container").innerHTML = e
     },
     _getTvs: function () {
