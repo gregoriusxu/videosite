@@ -38,6 +38,7 @@ gulp.task('copy', function () {
         './app.js',
         './config.js',
         './router.js',
+        './pm2.json',
         './www/images/*',
         './www/uploads/avatar/*',
         './www/uploads/movie/*',

@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "video",
+    "script": "app.js",
+    "cwd": "/var/www/videosite/dist",
+    "exec_mode": "fork",
+    "max_memory_restart": "256M",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
