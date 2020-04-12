@@ -5,6 +5,7 @@ const app = express();
 const router = express.Router();
 const config = require('./config');
 const fs = require('fs');
+const path = require('path');
 
 const installController = require('./controllers/install');
 const indexController = require('./controllers/index');
@@ -43,6 +44,8 @@ router.get('/search', movieController.showSearchMovie);
 router.get('/search/:content', movieController.doSearchMovieOnline);
 router.post('/search', movieController.doSearchMovie);
 router.post('/hot', movieController.getTodayHotMovies);
+
+app.use(express.static(path.join(__dirname)));
 
 // 404 page
 router.use(function (req, res, next) {
