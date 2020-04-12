@@ -124,7 +124,7 @@ gulp.task('modifyRef', function () {
 // 1. 先进行所有文件的压缩
 // 2. 建立映射文件并执行
 gulp.task('build', gulpSequence('clean', 'copy', 'compile', 'compress'));
-gulp.task('release', gulpSequence('gre'));
+gulp.task('release', gulpSequence('modifyRef'));
 gulp.task('default', gulpSequence('build', 'release'));
 
 

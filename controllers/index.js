@@ -134,7 +134,7 @@ function getHotMovies(callback) {
             callback(err, null);
         }
         // 修改url
-        let url = previews[0].playurl + '';
+        let url = no[0].playurl + '';
         url = url.substring(url.lastIndexOf('/') + 1)
         previews[0].url = url;
         // 开始获取今天的日期信息
