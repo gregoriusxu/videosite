@@ -122,30 +122,24 @@
                 </div>
             </div>
             <ul class="right clearFix" id="hot_movie_top">
-                <li class="li3"><a href="/play/{{hotMovies.movies[0].url}}"><img src=""
-                            realimg="/www/uploads/movie/{{hotMovies.movies[0].id}}.jpg" alt=""></a>
+                <li class="li3"><a href="/play/{{hotMovies.movies[0].url}}"><img src="{{hotMovies.movies[0].logo}}" alt=""></a>
                     <p>{{hotMovies.movies[0].title}}</p><span>{{hotMovies.movies[0].info}}</span>
                 </li>
-                <li class="li3"><a href="/play/{{hotMovies.movies[1].url}}"><img src=""
-                            realimg="/www/uploads/movie/{{hotMovies.movies[1].id}}.jpg" alt=""></a>
+                <li class="li3"><a href="/play/{{hotMovies.movies[1].url}}"><img src="{{hotMovies.movies[1].logo}}" alt=""></a>
                     <p>{{hotMovies.movies[1].title}}</p><span>{{hotMovies.movies[1].info}}</span>
                 </li>
-                <li class="li3"><a href="/play/{{hotMovies.movies[2].url}}"><img src=""
-                            realimg="/www/uploads/movie/{{hotMovies.movies[2].id}}.jpg" alt=""></a>
+                <li class="li3"><a href="/play/{{hotMovies.movies[2].url}}"><img src="{{hotMovies.movies[2].logo}}" alt=""></a>
                     <p>{{hotMovies.movies[2].title}}</p><span>{{hotMovies.movies[2].info}}</span>
                 </li>
             </ul>
             <ul class="right clearFix right-b" id="hot_movie_bottom">
-                <li class="li3"><a href="/play/{{hotMovies.movies[3].url}}"><img src=""
-                            realimg="/www/uploads/movie/{{hotMovies.movies[3].id}}.jpg" alt=""></a>
+                <li class="li3"><a href="/play/{{hotMovies.movies[3].url}}"><img src="{{hotMovies.movies[3].logo}}" alt=""></a>
                     <p>{{hotMovies.movies[3].title}}</p><span>{{hotMovies.movies[3].info}}</span>
                 </li>
-                <li class="li3"><a href="/play/{{hotMovies.movies[4].url}}"><img src=""
-                            realimg="/www/uploads/movie/{{hotMovies.movies[4].id}}.jpg" alt=""></a>
+                <li class="li3"><a href="/play/{{hotMovies.movies[4].url}}"><img src="{{hotMovies.movies[4].logo}}" alt=""></a></a>
                     <p>{{hotMovies.movies[4].title}}</p><span>{{hotMovies.movies[4].info}}</span>
                 </li>
-                <li class="li3"><a href="/play/{{hotMovies.movies[5].url}}"><img src=""
-                            realimg="/www/uploads/movie/{{hotMovies.movies[5].id}}.jpg" alt=""></a>
+                <li class="li3"><a href="/play/{{hotMovies.movies[5].url}}"><img src="{{hotMovies.movies[5].logo}}" alt=""></a></a>
                     <p>{{hotMovies.movies[5].title}}</p><span>{{hotMovies.movies[5].info}}</span>
                 </li>
             </ul>
@@ -167,8 +161,7 @@
         </div>
         <div class="list moveBig"><input type="hidden" value="{{pageNum}}" id="movie_pageNum">
             <ul class="right clearFix moveBig" id="movie_container">{{#if (movies)}} {{#each (movies)}}<li class="li1">
-                    <a href="/play/{{this.url}}" class="pos"><img src="" realimg="/www/uploads/movie/{{this.id}}.jpg"
-                            alt=""> <em>{{this.info}}</em></a>
+                    <a href="/play/{{this.url}}" class="pos"><img src="{{this.logo}}" alt=""> <em>{{this.info}}</em></a>
                     <p>{{this.title}}</p>
                 </li>{{/each}} {{/if}}</ul>
         </div>
