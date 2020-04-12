@@ -153,7 +153,7 @@ function getMovieDetails(req, url, callback) {
                     let width = img['attribs']['width'];
                     let height = img['attribs']['height'];
                     // http://pic2.iqiyipic.com/image/35180822/7d/33/v_118006948_m_601_m4_180_236.jpg
-                    let imgSrc = 'http:' + img['attribs']['data-src'];
+                    let imgSrc = 'https:' + img['attribs']['data-src'];
 
                     //let movieinfoStr = `${href}, ${title}, ${width}, ${height}, ${imgSrc}, ${$(site_piclist_info_describe[index]).text()}, ${$(score[index]).html()}, ${$(desc[index]).text()}`;
                     movieList.push({
@@ -221,9 +221,9 @@ exports.doSearchMovie = function (req, res, next) {
     let searchMoviename = req.body.moviename;
 
     // 这里需要判断一下，如果用户输入的是url地址的话
-    if (searchMoviename.startsWith('http')) {
+    if (searchMoviename.startsWith('http') || searchMoviename.startsWith('https')) {
         //searchMoviename = searchMoviename.substring(searchMoviename.lastIndexOf('/') + 1);
-        searchMoviename = 'http://jx.598110.com/index.php?url=' + searchMoviename;
+        searchMoviename = 'https://jx.598110.com/index.php?url=' + searchMoviename;
 
         // 开始获取用户评论的数据信息
         let params = {
@@ -343,7 +343,7 @@ exports.doSearchMovieOnline = function (req, res, next) {
     // 这里需要判断一下，如果用户输入的是url地址的话
     if (searchMoviename.startsWith('http')) {
         //searchMoviename = searchMoviename.substring(searchMoviename.lastIndexOf('/') + 1);
-        searchMoviename = 'http://jx.598110.com/index.php?url=' + searchMoviename;
+        searchMoviename = 'https://jx.598110.com/index.php?url=' + searchMoviename;
 
         // 开始获取用户评论的数据信息
         let params = {

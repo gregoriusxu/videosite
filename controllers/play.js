@@ -17,7 +17,7 @@ exports.showPlay = function (req, res, next) {
     // 开始播放url地址中的视频http://www.iqiyi.com/v_19rr7pi4k4.html
     let url = req.params.url;
     // v_19rr7pi4k4.html
-    url = 'http://www.iqiyi.com/' + url;
+    url = 'https://www.iqiyi.com/' + url;
     let tempUrl = url;
     let parseUrl = req.app.locals.config.parseUrl;
     let playUrl = parseUrl + url;

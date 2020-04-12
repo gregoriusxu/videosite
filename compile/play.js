@@ -47,7 +47,7 @@
       var t = $("#select-interface").get(0).options,
           e = t.selectedIndex,
           o = t[e].value,
-          n = window.location.href;n = "http://www.iqiyi.com/" + n.substr(n.lastIndexOf("/") + 1), 0 < e ? ("02" === o && (document.getElementById("video_iframe").src = "http://jx.598110.com/index.php?url=" + n), "03" === o && (document.getElementById("video_iframe").src = "http://a.2gty.com/apiurl/yun.php?url" + n)) : "01" === o && (document.getElementById("video_iframe").src = "http://www.82190555.com/video.php?url=" + n);
+          n = window.location.href;n = "http://www.iqiyi.com/" + n.substr(n.lastIndexOf("/") + 1), 0 < e ? ("02" === o && (document.getElementById("video_iframe").src = "http://jx.598110.com/index.php?url=" + n), "03" === o && (document.getElementById("video_iframe").src = "http://a.2gty.com/apiurl/yun.php?url" + n)) : "01" === o && (document.getElementById("video_iframe").src = "https://www.82190555.com/video.php?url=" + n);
     }), $("#collect-movie").on("click", function (t) {
       t.preventDefault();var e = window.location.href.toString(),
           o = e.substring(e.lastIndexOf("/") + 1);"收藏电影" === $("#collect-movie").text().trim() ? $.ajax({ url: "/play/colmovie/0", type: "POST", data: { url: o }, success: function success(t) {

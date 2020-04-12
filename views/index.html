@@ -6,7 +6,6 @@
     <title>电影联盟-VIP视频免费看</title>
     <meta name="keywords" content="VIP视频,VIP影院,我爱电影影院,VIP视频免费看,VIP视频抢先看">
     <meta name="description" content="电影联盟VIP影院-看VIP视频，就来找我">
-    <meta name="author" content="电影联盟, https://github.com/xiugangzhang">
     <link rel="shortcut icon" href="/www/favicon.ico">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/www/css/base.css">
@@ -46,16 +45,12 @@
                         class="logo-title">看VIP视频<br>就来找我吧</span></div>
                 <ul class="searchUl clearFix">
                     <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
-                    <li><a href="http://www.52tech.tech" target="_blank"><i class="fa fa-commenting"></i>社区</a></li>
                 </ul>
                 <div class="searchMiddle"><i class="fa fa-search"></i><input type="text" placeholder="流浪地球"><span
                         onclick='window.open("/search/流浪地球","_self")'>搜全网</span></div>
                 <div class="searchRight">
                     <ul>
-                        <li>
-                            <p class="fa fa-github"></p><br><span><a
-                                    href="https://github.com/xiugangzhang/vip.github.io">源码</a></span>
-                        </li>{{#if (user)}}<li>
+                        {{#if (user)}}<li>
                             <p class="fa fa-user"></p><br><span><a href="/user">会员</a></span>
                         </li>{{else}}<li>
                             <p class="fa fa-user"></p><br><span><a href="/login">登录</a></span>
