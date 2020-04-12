@@ -341,7 +341,7 @@ exports.doSearchMovieOnline = function (req, res, next) {
     }
 
     // 这里需要判断一下，如果用户输入的是url地址的话
-    if (searchMoviename.startsWith('http')) {
+    if (searchMoviename.startsWith('http') || searchMoviename.startsWith('https')) {
         //searchMoviename = searchMoviename.substring(searchMoviename.lastIndexOf('/') + 1);
         searchMoviename = 'https://jx.598110.com/index.php?url=' + searchMoviename;
 

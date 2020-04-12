@@ -10,7 +10,7 @@ module.exports = {
     avatarDir : path.join(__dirname, 'www', 'uploads', 'avatar'),           // 用户的图像目录
     movieDir : path.join(__dirname, 'www', 'uploads', 'movie'),
     movieurl : 'https://vip.iqiyi.com/hot.html?cid=1',                       // 电影地址，
-    parseUrl : 'https://www.82190555.com/video.php?url=',
+    parseUrl : 'https://z1.m1907.cn/?jx=',
     movielist : [] ,                                                         // 存储了用户获取的电影列表信息
     userlist : 0,
     host : 'localhost',
